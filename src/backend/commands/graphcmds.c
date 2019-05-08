@@ -472,11 +472,6 @@ CheckInheritLabel(CreateStmt *stmt)
 	foreach(entry, stmt->inhRelations)
 	{
 		RangeVar   *parent = lfirst(entry);
-
-		if (RangeVarIsLabel(parent))
-			ereport(ERROR,
-					(errcode(ERRCODE_INVALID_TABLE_DEFINITION),
-					 errmsg("invalid parent, table cannot inherit label")));
 	}
 }
 
