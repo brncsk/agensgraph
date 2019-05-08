@@ -18,6 +18,7 @@
 #include "access/sysattr.h"
 #include "access/htup_details.h"
 #include "access/xact.h"
+#include "catalog/ag_graph_fn.h"
 #include "catalog/catalog.h"
 #include "catalog/dependency.h"
 #include "catalog/indexing.h"
